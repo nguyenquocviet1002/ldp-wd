@@ -137,15 +137,16 @@ html[xmlns] .clearfix {
   margin: 0 auto;
 }
 
-html, body{
-  font-size: 16px;
-  font-family: 'Bellota Text';
+html,
+body {
+  font-size: 17px;
+  font-family: "Bellota Text";
 }
-body{
-    background-color: #ccc;
-    color: #474747;
+body {
+  background-color: #ccc;
+  color: #474747;
 }
-.button-1{
+.button-1 {
   background-color: #ff0000;
   text-transform: uppercase;
   color: #fff;
@@ -155,35 +156,45 @@ body{
   width: fit-content;
   margin: 0 auto;
   cursor: pointer;
-  @media (max-width: 767px){
+  @media (max-width: 767px) {
     padding: 7px 20px;
   }
 }
-.screen1, .screen2{
-    max-width: 600px;
-    width: 100%;
-    margin: 0 auto;
+.screen1,
+.screen2,
+.screen3,
+.screen4,
+.screen5 {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
 }
-.title{
-    font-family: 'Bonheur Royale';
+.title {
+  font-family: "Bonheur Royale";
+}
+.title__main {
+  font-family: "Bonheur Royale";
+  font-size: 2.8rem;
+  text-align: center;
+  margin-bottom: 10px;
 }
 @keyframes opac {
   from {
-      opacity: 0
+    opacity: 0;
   }
 
   to {
-      opacity: 1
+    opacity: 1;
   }
 }
 @keyframes modalbox {
   0% {
-      top: -250px;
-      opacity: 0
+    top: -250px;
+    opacity: 0;
   }
 
   100% {
-      top: 0;
-      opacity: 1
+    top: 0;
+    opacity: 1;
   }
 }
