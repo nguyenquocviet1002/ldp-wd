@@ -141,10 +141,18 @@ html,
 body {
   font-size: 17px;
   font-family: "Bellota Text";
+  scroll-behavior: smooth;
+  @media (max-width: 430px){
+    font-size: 15.5px;
+  }
 }
 body {
   background-color: #ccc;
   color: #474747;
+  padding-top: 50px;
+}
+section[id] {
+  scroll-margin-top: 50px;
 }
 .button-1 {
   background-color: #ff0000;
@@ -160,11 +168,15 @@ body {
     padding: 7px 20px;
   }
 }
+.header,
 .screen1,
 .screen2,
 .screen3,
 .screen4,
-.screen5 {
+.screen5,
+.screen6,
+.screen7,
+.screen8 {
   max-width: 600px;
   width: 100%;
   margin: 0 auto;
