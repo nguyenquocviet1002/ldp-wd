@@ -38,7 +38,7 @@
             <div class="screen1__date">Ngày 12 - 17 tháng 11 năm 2024</div>
             <div class="screen1__name">Minh Chuyên &#10084; Phương Thảo</div>
             <div class="screen1__location">Nhà trai: Xóm 5, Tráng Việt, Mê Linh, Hà Nội</div>
-            <div class="screen1__location">Nhà gái: Trung tâm tiệc cưới Dolphin Palace, 121 đường Âu Cơ, phường Kinh Bắc, TP. Bắc Ninh</div>
+            <div class="screen1__location">Nhà gái: Trung tâm tiệc cưới Dolphin Palace, 121 đường Âu Cơ, <br> phường Kinh Bắc, TP. Bắc Ninh</div>
         </div>
      </section>
      <section id="page2" class="screen2">
@@ -126,6 +126,7 @@
                 </div>
                 <div class="screen4__img">
                     <img src="media/images/page3-p9.jpg" alt="">
+                    <img class="img-1" src="media/images/page3-p11.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -161,22 +162,27 @@
      <section id="page6" class="screen6">
         <div class="container">
             <div class="screen6_title title__main">Lưu bút</div>
-            <div class="screen6__box">
+            <div class="screen6__box" id="first-form">
                 <div class="screen6__flex">
                     <div class="screen6__control form__control">
-                        <input type="text" placeholder="Họ và tên">
+                        <input type="text" name="name" placeholder="Họ và tên">
+                        <div class="form__message"></div>
                     </div>
                     <div class="screen6__control form__control">
-                        <input type="text" placeholder="Mối quan hệ với cô dâu chú rể">
+                        <select name="relationship">
+                            <option value="">Mối quan hệ với dâu rể</option>
+                            <option value="Bạn chú rể">Bạn chú rể</option>
+                            <option value="Bạn cô dâu">Bạn cô dâu</option>
+                        </select>
+                        <div class="form__message"></div>
                     </div>
                 </div>
                 <div class="screen6__mess form__control">
-                    <textarea rows="4" placeholder="Lời chúc"></textarea>
+                    <textarea rows="4" name="message" placeholder="Lời chúc"></textarea>
+                    <div class="form__message"></div>
                 </div>
                 <div class="screen6__submit">
-                    <button type="submit">
-                        Gửi lời chúc
-                    </button>
+                    <input type="button" value="Gửi lời chúc">
                 </div>
                 <div class="screen6__note">Cảm ơn mọi người, hy vọng tương lai chiếu cố nhiều hơn</div>
             </div>
@@ -188,32 +194,38 @@
             <div class="screen7__note">
                 Hãy xác nhận rằng bạn sẽ đến chung vui với chúng mình để chúng mình đón tiếp bạn (và có thể là nửa kia) được chu đáo hơn nhé!
             </div>
-            <div class="screen7__box">
+            <div class="screen7__box" id="second-form">
                 <div class="screen7__flex">
                     <div class="screen7__control form__control">
-                        <input type="text" placeholder="Họ và tên">
+                        <input type="text" name="name" placeholder="Họ và tên">
+                        <div class="form__message"></div>
                     </div>
                     <div class="screen7__control form__control">
-                        <input type="text" placeholder="Mối quan hệ với cô dâu chú rể">
+                        <select name="relationship">
+                            <option value="">Mối quan hệ với dâu rể</option>
+                            <option value="Bạn chú rể">Bạn chú rể</option>
+                            <option value="Bạn cô dâu">Bạn cô dâu</option>
+                        </select>
+                        <div class="form__message"></div>
                     </div>
                 </div>
                 <div class="screen7__flex">
                     <div class="screen7__select form__control">
-                        <select>
+                        <select name="date">
                             <option value="">Chọn ngày</option>
                             <option value="12/11/2024">12/11/2024</option>
                             <option value="17/11/2024">17/11/2024</option>
                             <option value="Cả 2 ngày">Cả 2 ngày</option>
                         </select>
+                        <div class="form__message"></div>
                     </div>
                     <div class="screen7__mess form__control">
-                        <input type="text" placeholder="Số lượng người tham dự">
+                        <input type="text" name="quantity" placeholder="Số lượng người tham dự">
+                        <div class="form__message"></div>
                     </div>
                 </div>
                 <div class="screen7__submit">
-                    <button type="submit">
-                        Xác nhận
-                    </button>
+                    <input type="button" value="Xác nhận">
                 </div>
             </div>
         </div>
@@ -226,6 +238,7 @@
         </div>
      </section>
 
+     <script src="media/js/jquery.min.js"></script>
      <script src="media/js/script.js"></script>
 </body>
 </html>
